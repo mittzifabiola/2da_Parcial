@@ -8,7 +8,6 @@ int list[0];
 int ordenamiento(int list[], int n)
 {
 	int min=0;
-	int indexMin=0;
 	for(int i=0; i<n-1; i++)
 	{
 		min = i;
@@ -18,7 +17,7 @@ int ordenamiento(int list[], int n)
 				min = j;
 			}
 		}
-		if(indexMin !=i){
+		if(min !=i){
 			swap(&list[min], &list[i]);
 		}
 	}
